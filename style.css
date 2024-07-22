@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+/* nav{
+     width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+ul{
+    text-align: center;
+    width: 100%;
+    background-color: aliceblue; 
+    }
+    li{
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    padding-right: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+li a{
+    text-decoration: none;
+} */
+nav{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+nav h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+li{
+    display:flex;
+    padding-right : 15px;
+    list-style: none;
+}
+.open{
+    display: none;
+}
+.close{
+    display: none;
+}
+.search{
+    padding-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.welcome{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/boukaih-bGMyTnSlYvE-unsplash.jpg);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.welcome h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+    text-shadow: 5px 10px 5px black;
+}
+.welcome p{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    font-weight: 400;
+}
+#sect2head{
+    font-family: sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+#products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*#products h2{
+    width: 98%;
+    height: 50px;
+    /* border-top: 1px solid; 
+    border-bottom: 1px solid;
+    padding-top: 25px;
+    padding-left: 20px;
+    margin-top: 10px;
+    } */
+    #products h1{
+        text-align: center;
+        font-size: 50px;
+     }
+.products{
+        background-color: lightgreen;
+        border-radius: 3px;
+        margin: 50px;
+        padding: 3px;
+        box-shadow: 0px 0px 5px 2px black;
+        width: 450px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-weight: 900;
+        transition-duration: 1s;
+        transition-property: all;
+ }
+ .products:hover{
+    transform: scale(1.1);
+ }
+.More{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.reviews{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+#sect3head{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+form{
+    font-family: sans-serif;
+}
+.submitbtn{
+    width: 100px;
+    height: 50px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+}
+.contact a{
+    text-decoration: none;
+}
+form input{
+    width: 250px;
+    height: 30px;
+}
+.contact{
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
+.contact div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* nav{
+        position: relative;
+    }
+    ul{
+        position: absolute;
+        display: inline-block;
+        background-color: aliceblue;
+        margin-top: -250px;
+    }
+    ul li{
+        height: 50px;
+    } */
+    .search{
+        display: none;
+        
+    }
+    .open{
+        display: block;
+    }
+    .close{
+        display: none;
+    }
+    ul{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 5;
+        margin-top: -300px;
+        background-color: aliceblue;
+    }
+    li{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+    }
+    li:hover{
+        background-color: rgb(150, 206, 255);
+        color: white;
+    }
+    .overlay h1{
+        font-size: 30px;
+    }
+    .overlay p{
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sect2head{
+        font-family: sans-serif;
+        font-size: 50px;
+        text-align: center;
+    }
+    .products{
+        width: 250px;
+        height: 150px;
+    }
+    #sect3head{
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 40px;
+    }
+    form input{
+        width: 150px;
+        height: 30px;
+    }
+}
