@@ -123,13 +123,13 @@ a{
         font-size: 50px;
      }
 .products{
-        background-color: lightgreen;
+        /* background-color: lightgreen; */
         border-radius: 3px;
         margin: 50px;
         padding: 3px;
-        box-shadow: 0px 0px 5px 2px black;
-        width: 450px;
-        height: 350px;
+        /* box-shadow: 0px 0px 5px 2px black; */
+        width: 300px;
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -140,6 +140,10 @@ a{
         transition-duration: 1s;
         transition-property: all;
  }
+ .products img{
+    width: 250px;
+    height: 150px;
+}
  .products:hover{
     transform: scale(1.1);
  }
@@ -247,6 +251,10 @@ form input{
         text-align: center;
     }
     .products{
+        width: 250px;
+        height: 150px;
+    }
+    .products img{
         width: 250px;
         height: 150px;
     }
